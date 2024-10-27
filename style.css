@@ -1,0 +1,107 @@
+body {
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    transition: border-color 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #007BFF; /* Цвет границы при фокусе */
+    outline: none; /* Убираем стандартный обвод поля */
+}
+
+button {
+    padding: 10px 15px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Цвет фона кнопки при наведении */
+}
+
+/* Стиль для первого элемента списка */
+ul li:first-child {
+    color: blue; /* Цвет текста первого элемента */
+    font-weight: bold; /* Жирный шрифт для первого элемента */
+}
+
+/* Стиль для последнего элемента списка */
+ul li:last-child {
+    color: red; /* Цвет текста последнего элемента */
+    text-decoration: underline; /* Подчёркнутый текст для последнего элемента */
+}
+
+.block {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+.block p {
+    margin: 10px 0;
+}
+
+/* Стили для изменения внешнего вида нечетных текстовых элементов внутри блока */
+.block p:nth-child(odd) {
+    background-color: #f9f9f9;
+}
+
+/* Изменение цвета ссылки при наведении */
+.block a {
+    color: blue;
+    text-decoration: none;
+}
+
+.block a:hover {
+    color: red;
+}
+
+/* Стили для первого и последнего дочернего элемента */
+.block h2:first-child {
+    font-weight: bold;
+}
+
+.block h2:last-child {
+    text-transform: uppercase;
+}
+
+.container1 p:first-child:hover {
+    background-color: lightblue;
+    color: navy;
+  }
+  
+  .container1 p:last-child:focus {
+    border: 2px solid green;
+    outline: none;
+  }
+  
+  ul li:first-child:hover {
+    font-weight: bold;
+  }
+  
+  ul li:last-child:focus {
+    text-decoration: underline;
+  }
